@@ -16,6 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Manrope", sans-serif;
 }
 
 .container {
@@ -25,8 +26,16 @@ body {
   border-radius: $radius;
   background-color: white;
   .drawers {
-    width: 20%;
+    width: 50%;
     border-radius: $radius 0 0 $radius;
+  }
+  .information {
+    padding: 20px 40px;
+  }
+
+  .avatar {
+    width: 7%;
+    border-radius: 50%;
   }
 }
 
