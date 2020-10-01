@@ -1,5 +1,9 @@
+:root {
+  font-size: 13px;
+}
+
 body {
-  background-color: #EDF2F8;
+  background-color: #ecf2f8;
 }
 
 .container {
