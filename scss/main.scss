@@ -25,6 +25,11 @@ body {
   width: 50%;
   border-radius: $radius;
   background-color: white;
+
+  h1 {
+    color: $very-dark-grayish-blue;
+  }
+
   .drawers {
     width: 50%;
     border-radius: $radius 0 0 $radius;

@@ -29,6 +29,10 @@ body {
   background-color: white;
 }
 
+.container h1 {
+  color: #48556a;
+}
+
 .container .drawers {
   width: 50%;
   border-radius: 15px 0 0 15px;
