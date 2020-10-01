@@ -2,6 +2,12 @@ body {
   background-color: #EDF2F8;
 }
 
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
