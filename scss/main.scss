@@ -27,6 +27,7 @@ body {
   height: 35%;
   border-radius: $radius;
   background-color: white;
+  text-shadow: 0 0 5px hsla(217, 19%, 35%, 0.253);
   box-shadow: 0 20px 75px 0 hsla(212, 23%, 69%, 0.03),
     10px 0 35px 0 hsla(212, 23%, 69%, 0.03),
     -10px 0 35px 0 hsla(212, 23%, 69%, 0.03);
@@ -41,7 +42,7 @@ body {
 .drawers {
   width: 39%;
   border-radius: $radius 0 0 $radius;
-  filter: brightness(105%);
+  filter: saturate(110%) brightness(105%) contrast(90%);
 }
 
 .information {
@@ -51,6 +52,7 @@ body {
 
 .description {
   color: $desaturated-dark-blue;
+  line-height: 20px;
 }
 
 .avatar {
@@ -79,7 +81,7 @@ body {
 .profile-info {
   display: flex;
   align-items: center;
-  height: 65px;
+  height: 50px;
   div {
     margin-left: 6%;
   }
