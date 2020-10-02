@@ -1,5 +1,6 @@
 :root {
   font-size: 13px;
+  overflow: hidden;
 }
 
 body {
@@ -24,21 +25,27 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 51%;
+  height: 35%;
   border-radius: 15px;
   background-color: white;
+  -webkit-box-shadow: 0 20px 75px 0 rgba(158, 175, 194, 0.03), 10px 0 35px 0 rgba(158, 175, 194, 0.03), -10px 0 35px 0 rgba(158, 175, 194, 0.03);
+          box-shadow: 0 20px 75px 0 rgba(158, 175, 194, 0.03), 10px 0 35px 0 rgba(158, 175, 194, 0.03), -10px 0 35px 0 rgba(158, 175, 194, 0.03);
 }
 
 .container h1 {
   color: #48556a;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .drawers {
-  width: 50%;
+  width: 39%;
   border-radius: 15px 0 0 15px;
 }
 
 .information {
+  width: 70%;
   padding: 20px 40px;
 }
 
@@ -47,7 +54,7 @@ body {
 }
 
 .avatar {
-  width: 7%;
+  width: 14%;
   border-radius: 50%;
 }
 
@@ -55,12 +62,49 @@ body {
   background-color: #ecf2f8;
   border-radius: 50%;
   border: 0;
-  padding: 10px;
+  padding: 8px;
+  height: 15px;
 }
 
 .share-button img {
-  margin-top: 2px;
   width: 15px;
+  height: 15px;
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-info div {
+  margin-left: 6%;
+}
+
+.profile-info p {
+  color: #9eafc2;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+h4 {
+  color: #48556a;
+  font-weight: 700;
 }
 
 .attribution {

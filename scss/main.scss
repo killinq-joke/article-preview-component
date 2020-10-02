@@ -6,6 +6,7 @@ $light-grayish-blue: hsl(210, 46%, 95%);
 
 :root {
   font-size: 13px;
+  overflow: hidden;
 }
 
 body {
@@ -21,21 +22,28 @@ body {
 .container {
   margin: auto;
   display: flex;
-  width: 50%;
+  width: 51%;
+  height: 35%;
   border-radius: $radius;
   background-color: white;
+  box-shadow:0 20px 75px 0 hsla(212, 23%, 69%, 0.03),
+             10px 0 35px 0 hsla(212, 23%, 69%, 0.03),
+             -10px 0 35px 0 hsla(212, 23%, 69%, 0.03);
 
   h1 {
     color: $very-dark-grayish-blue;
+    font-size: 20px;
+    font-weight: 700;
   }
 }
 
 .drawers {
-  width: 50%;
+  width: 39%;
   border-radius: $radius 0 0 $radius;
 }
 
 .information {
+  width: 70%;
   padding: 20px 40px;
 }
 
@@ -44,7 +52,7 @@ body {
 }
 
 .avatar {
-  width: 7%;
+  width: 14%;
   border-radius: 50%;
 }
 
@@ -52,11 +60,36 @@ body {
   background-color: $light-grayish-blue;
   border-radius: 50%;
   border: 0;
-  padding: 10px;
+  padding: 8px;
+  height: 15px;
   img {
-    margin-top: 2px;
     width: 15px;
+    height: 15px;
   }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  div {
+    margin-left: 6%;
+  }
+  p {
+    color: $grayish-blue;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+}
+
+h4 {
+  color: $very-dark-grayish-blue;
+  font-weight: 700;
 }
 
 .attribution {
