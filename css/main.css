@@ -73,13 +73,21 @@ body {
   cursor: pointer;
 }
 
-.share-button img {
+.share-button svg {
   width: 15px;
   height: 15px;
 }
 
+path {
+  fill: #6d7f97;
+}
+
 #share-button.active {
-  background-color: red;
+  background-color: #6d7f97;
+}
+
+#share-button.active path {
+  fill: red;
 }
 
 .profile {

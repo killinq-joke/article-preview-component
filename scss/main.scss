@@ -67,14 +67,21 @@ body {
   padding: 8px;
   height: 15px;
   cursor: pointer;
-  img {
+  svg {
     width: 15px;
     height: 15px;
   }
 }
 
+path {
+  fill: #6d7f97;
+}
+
 #share-button.active {
-  background-color: red;
+    background-color: $desaturated-dark-blue;
+    path {
+      fill: red;
+    }
 }
 
 .profile {
