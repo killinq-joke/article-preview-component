@@ -87,7 +87,7 @@ path {
 }
 
 #share-button.active path {
-  fill: red;
+  fill: #ecf2f8;
 }
 
 .profile {
