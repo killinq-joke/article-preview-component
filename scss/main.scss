@@ -79,52 +79,71 @@ path {
 }
 
 #share-button.active {
-    background-color: $desaturated-dark-blue;
-    path {
-      fill: $light-grayish-blue;
+  background-color: $desaturated-dark-blue;
+  path {
+    fill: $light-grayish-blue;
+  }
+}
+
+.pop-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $very-dark-grayish-blue;
+  padding: 2rem;
+  color: white;
+  font-weight: lighter;
+  border-radius: 10px;
+  position: absolute;
+  width: 200px;
+  font-size: 17px;
+  right: -355%;
+  bottom: 50px;
+
+  p {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+
+  button {
+    display: flex;
+    background-color: $very-dark-grayish-blue;
+    border: 0;
+    width: 16%;
+    cursor: pointer;
+    img {
+      width: 100%;
     }
+  }
 }
 
-.pop-up{
-    background-color: #888;
-    padding: 1rem;
-    color: red;
-    font-weight: lighter;
-    border-radius: 8px;
-    position: absolute;
-    width: 230px;
-    font-size: 17px;
-    right: 50%;
-    margin-right: -425%;
+.pop-up:after {
+  content: "";
+  position: absolute;
+  border-top: 15px solid $very-dark-grayish-blue;
+  border-right: 15px solid rgba(0, 0, 0, 0);
+  border-left: 15px solid rgba(0, 0, 0, 0);
+  bottom: -13px;
+  right: 44%;
 }
-
-.pop-up:after{
-    content: "";
-    position: absolute;
-    border-top: 15px solid #888;
-    border-right: 15px solid rgba(0, 0, 0, 0);
-    border-left: 15px solid rgba(0, 0, 0, 0);
-    bottom: -13px;
-    right: 46%
-}
-.pop-up{
-    animation-fill-mode: forwards;
-    animation-name: move;
-    animation-duration: .6s;
-    animation-timing-function: ease
+.pop-up {
+  animation-fill-mode: forwards;
+  animation-name: move;
+  animation-duration: 0.6s;
+  animation-timing-function: ease;
 }
 
 @keyframes move {
-    from{
-        transform: scale(0);
-        top: 15px;
-        opacity: .3
-    }
-    to{
-        transform: scale(1);
-        top: -65px;
-        opacity: 1
-    }
+  from {
+    transform: scale(0);
+    top: 15px;
+    opacity: 0.3;
+  }
+  to {
+    transform: scale(1);
+    top: -65px;
+    opacity: 1;
+  }
 }
 
 .profile {
