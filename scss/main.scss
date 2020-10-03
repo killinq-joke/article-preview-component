@@ -87,7 +87,7 @@ path {
 
 .pop-up{
     background-color: #888;
-    padding: 13px 17px;
+    padding: 1rem;
     color: red;
     font-weight: lighter;
     border-radius: 8px;
@@ -95,17 +95,16 @@ path {
     width: 230px;
     font-size: 17px;
     right: 50%;
-    margin-right:-140px;
-    top: -65px;
+    margin-right: -425%;
 }
 
 .pop-up:after{
     content: "";
     position: absolute;
     border-top: 15px solid #888;
-    border-right: 10px solid rgba(0, 0, 0, 0);
-    border-left: 10px solid rgba(0, 0, 0, 0);
-    bottom: -15px;
+    border-right: 15px solid rgba(0, 0, 0, 0);
+    border-left: 15px solid rgba(0, 0, 0, 0);
+    bottom: -13px;
     right: 46%
 }
 .pop-up{
